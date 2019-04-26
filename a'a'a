@@ -1,0 +1,10 @@
+echo "# 112" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zhuyang2356/112.git
+git push -u origin master
+pos_files = ['E:/learning-nlp-master/chapter-8/sentiment-analysis/pos/' + f for f in os.listdir(
+    'E:/learning-nlp-master/chapter-8/sentiment-analysis/pos/') if isfile(join('E:/learning-nlp-master/chapter-8/sentiment-analysis/pos/', f))]
+neg_files = ['E:/learning-nlp-master/chapter-8/sentiment-analysis/neg/' + f for f in os.listdir(
+    'E:/learning-nlp-master/chapter-8/sentiment-analysis/neg/') if isfile(join('E:/learning-nlp-master/chapter-8/sentiment-analysis/neg/', f))]
